@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>The Godfather: 50th Anniversary Edition</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?
+      family=Poppins:ital,wght@0,200;0,300;0,400;0,500;0,600;1,100;1,200;1,300;1,400;1,500;1,600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!------------------ Header ------------------>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <div class="logo">
+            <a href="index.html">
+              <img src="images/logo.png" class="logo" alt="Store-Logo"
+            /></a>
+          </div>
+          <!----------  Nav Bar ------------------>
+          <nav>
+            <ul id="MenuItems">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="books.html">Books</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </nav>
+          <img src="images/menu.png" class="menu-icon" onclick="menutoggle()" />
+        </div>
+      </div>
+  </header>
+
+    <!-- ----------single product details------------- -->
+    <div class="small-container single-product">
+      <p><a href="index.html">Home</a> > <a href="books.html">Books</a> > <a href="book-detail.html">The Godfather: 50th Anniversary Edition</a></p>
+      <div class="row">
+        <div class="col-2">
+          <img src="images/Book.jpg" alt="Book" width="68%" />
+        </div>
+        <div class="col-2">
+          <h1>The Godfather: 50th Anniversary Edition</h1>
+          <h4>$14.99</h4>
+          <a href="" class="btn">Add To Cart</a>
+          <h3>Book Details</h3>
+          <br />
+          <p>
+            <strong>
+              ANNIVERSARY EDITION—WITH A NEW INTRODUCTION BY FRANCIS FORD COPPOLA
+              <br><br>
+              Mario Puzo’s classic saga of an American crime family
+            that became a global phenomenon—nominated as
+            one of America’s best-loved novels <br> by PBS’s <i>The Great American Read.</i>
+            </strong>
+            <br><br>
+            With its brilliant and brutal portrayal of the Corleone family,
+            The Godfather burned its way into our national consciousness.
+            This unforgettable saga of crime and corruption,
+            passion and loyalty continues to stand the test of time,
+            as the definitive novel of the Mafia underworld.
+            <br><br>
+            A #1 New York Times bestseller in 1969,
+            Mario Puzo’s epic was turned into the incomparable film of the same name,
+            directed by Francis Ford Coppola, which won the Academy Award for Best Picture.
+            It is the original classic that has been often imitated, but never matched.
+            A tale of family and society, law and order, obedience and rebellion,
+            it reveals the dark passions of human nature played out against
+            a backdrop of the American dream.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- -------------title----------------- -->
+    <div class="small-container">
+      <div class="row row-2">
+        <h2>Related Books</h2>
+        <a href="books.html"><p>View More</p></a>
+      </div>
+    </div>
+    <!-- --------------Product-------------- -->
+    <div class="small-container">
+      <div class="row">
+        <div class="col-4">
+          <img src="images/Book.jpg" alt="Book" />
+          <h4>The Godfather: 50th Anniversary Edition</h4>
+          <p>$14.99</p>
+        </div>
+        <div class="col-4">
+          <img src="images/Book_2.jpg" alt="Book 2" />
+          <h4>The Great Gatsby</h4>
+          <p>$4.99</p>
+        </div>
+        <div class="col-4">
+          <img src="images/Book_4.jpg" alt="Book 3" />
+          <h4>Alice in Wonderland</h4>
+          <p>$5.99</p>
+        </div>
+        <div class="col-4">
+          <img src="images/Book_3.jpg" alt="Book 4" />
+          <h4>To Kill a Mockingbird</h4>
+          <p>$7.99</p>
+        </div>
+      </div>
+    </div>
+    <!-- ---------------------footer------------------- -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          </div>
+          <div class="footer-col-2">
+          </div>
+          <div class="footer-col-3">
+            <h3>Useful Links</h3>
+            <ul>
+              <li ></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Privacy Policies</a></li>
+              <li><a href="#">Terms</a></li>
+              <li><a href="#">Copyright</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+        <hr />
+      </div>
+    </footer>
+    <!-- ---------Javascript for toggle menu------------- -->
+    <script>
+      var MenuItems = document.getElementById("MenuItems");
+      MenuItems.style.maxHeight = "0px";
+      function menutoggle() {
+        if (MenuItems.style.maxHeight == "0px") {
+          MenuItems.style.maxHeight = "200px";
+        } else {
+          MenuItems.style.maxHeight = "0px";
+        }
+      }
+    </script>
+  </body>
+</html>
